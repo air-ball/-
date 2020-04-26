@@ -1,5 +1,4 @@
-**平时遇到一些开发问题**
-group by 默认取第一条，如果想根据自定义排序去取数据
+##group by 默认取第一条，如果想根据自定义排序去取数据
 
 $user = \App\Model\UserModel::select(\DB::raw('history.id as history_id,user.username,user.id,history.record_date,h2.weight - history.weight as less_weight'))
             ->where('user.is_on', 1)
